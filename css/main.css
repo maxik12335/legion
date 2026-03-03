@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 16px 0 50px 0px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 74px;
+  margin-right: 30px;
+}
+
+.logo-content {}
+
+.logo-title {
+  font-weight: 800;
+  font-size: 18px;
+  color: #F50709;
+  margin-bottom: 5px;
+}
+
+.logo-subtitle {
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.menu {}
+
+.menu-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu-list__item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.menu-link {
+  font-weight: 500;
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header-tel {
+  font-weight: 500;
+  font-size: 15px;
+  margin-right: 60px;
+}
+
+.header-call {
+  font-weight: 300;
+  font-size: 15px;
+  border-radius: 10px;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+/* bit-technika */
+.bit-technika {
+  margin-bottom: 50px;
+}
+
+.bit-technika__title {
+  color: #FC0106;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.bit-technika__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bit-technika__content {
+  width: 100%;
+  background-color: #C80C0F;
+  padding: 30px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+.bit-technika__contacts-box {
+  width: 400px;
+}
+
+.bit-technika__contact:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.bit-technika__contact-title {
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+}
+
+.bit-technika__contact-subtitle {
+  font-weight: 200;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.bit-technika__img {
+  width: 300px;
+}
+
+/* company */
+.company {
+  margin-bottom: 50px;
+}
+
+.company .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.company__content {
+  width: 47%;
+  margin-right: 40px;
+}
+
+.company-title {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 15px;
+  letter-spacing: 1.05%;
+}
+
+.company-title--red {
+  color: #FC0106;
+}
+
+.company-description {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1.1%;
+}
+
+.company-map {
+  width: 500px;
+  height: 320px;
+  border-radius: 8px;
+  border: 3px solid #093233;
+}
+
+/* contacts */
+.contacts {}
+
+.contacts__title {
+  color: #FC0106;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.contacts-title-block {
+  background-color: #C80C0F;
+  color: white;
+  margin-bottom: 35px;
+  padding: 24px 105px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 1.05%;
+}
+
+.contacts-box-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.contacts-content {
+  padding: 25px;
+  border: 3px solid #093233;
+  list-style-type: none;
+  margin-right: 20px;
+  border-radius: 8px;
+  width: 70%;
+}
+
+.dostavka-box-content {
+  align-items: normal;
+}
+
+.contacts-content--w30 {
+  width: 41%;
+}
+
+.contacts-content__item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contacts-content__item:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.contacts-img {
+  margin-right: 45px;
+  width: 35px;
+  height: 35px;
+}
+
+.contacts-item-content__title {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1.1%;
+  color: #C80C0F;
+  margin-bottom: 5px;
+}
+
+.contacts-item-content__description {
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 1.1%;
+  width: 500px;
+}
+
+.dostavka-description {
+  width: auto;
+}
+
+
+.contacts-item-content__description span {
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.red-round {
+  display: block;
+  background-color: #C80C0F;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+}
+
+.contacts-item-content__description {
+  display: flex;
+  align-items: center;
+}
+
+.dostavka-item {
+  height: 100%;
+}
+
+.dostavka-content {
+  height: 100%;
+}
+
+.dostavka-title {
+  margin-bottom: 10px;
+}
+
+.dostavka-list {
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.company-map {
+
+}
+
