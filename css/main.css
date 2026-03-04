@@ -527,8 +527,144 @@ body {
   letter-spacing: 1.05%;
 }
 
+/* mobyle blocks display:none */
+.bit-technika__box-mobyle {
+  display: none;
+}
 
+.burger {
+  flex-direction: column;
+  width: 15px;
+  display: none;
+}
 
+.burger span {
+  width: 100%;
+  height: 3px;
+  background-color: #C80C0F;
+}
 
+.burger span:not(:last-child) {
+  margin-bottom: 3px;
+}
 
+@media (max-width: 1200px) {
+  .container {
+    width: 350px;
+  }
 
+  .heeader-buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  .burger {
+    display: flex;
+    margin-right: 15px;
+  }
+
+  .logo-img {
+    width: 40px;
+    height: 48px;
+  }
+
+  .logo-title {
+    font-size: 15px;
+  }
+
+  .logo-subtitle {
+    font-size: 8px;
+  }
+
+  .header-call {
+    font-size: 8px;
+    padding: 5px 10px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .header-tel {
+    display: none;
+  }
+
+  .bit-technika__title {
+    font-size: 18px;
+  }
+
+  .bit-technika__box {
+    display: none;
+  }
+
+  .bit-technika__box-mobyle {
+    display: flex;
+  }
+
+  .bit-technika__content {
+    padding: 25px 20px;
+  }
+
+  .bit-technika__contacts-box {
+    margin-right: 10px;
+  }
+
+  .bit-technika__contact-title {
+    font-size: 10px;
+  }
+
+  .bit-technika__contact-subtitle {
+    font-size: 10px;
+  }
+
+  .bit-technika__content-img {
+    width: 150px;
+    border-radius: 5px;
+  }
+
+  .company__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .company__content {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+
+  .company .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .company-map {
+    width: 140px;
+    height: 100px;
+  }
+
+  .company-title {
+    font-size: 10px;
+    margin-right: 15px;
+  }
+
+  .company-description {
+    font-size: 8px;
+  }
+
+  .company__map-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .company__map-box-img {
+    width: 45px;
+    height: 45px;
+    margin-right: 35px;
+  }
+}
