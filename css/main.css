@@ -367,9 +367,9 @@ body {
   margin-bottom: 18px;
 }
 
-.catalog-in-menu-list__item {
-  display: flex;
-  align-items: center;
+.catalog-in-menu-list__link {
+  text-decoration: none;
+  color: black;
 }
 
 .catalog-in-menu-list__item:not(:last-child) {
@@ -461,3 +461,74 @@ body {
   color: black;
   text-decoration: none;
 }
+
+/* tovar */
+
+.tovar-section {
+  width: 100%;
+}
+
+.tovar-section-title {
+  font-weight: 800;
+  font-size: 24px;
+  letter-spacing: 1.05%;
+  color: #C80C0F;
+  margin-bottom: 26px;
+}
+
+.tovar-content-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tovar-section__img {
+  width: 400px;
+  height: 400px;
+  margin-right: 20px;
+  border-radius: 30px;
+}
+
+.tovar-content {
+  padding: 40px 20px;
+  border: 2px solid #E3B3B3;
+  border-radius: 5px;
+}
+
+.tovar-content__price {
+  font-weight: 900;
+  font-size: 25px;
+  letter-spacing: 1.05%;
+  margin-bottom: 21px;
+  text-align: center;
+}
+
+.tovar-content__button {
+  font-weight: 300;
+  font-size: 20px;
+  padding: 6px 13px;
+  border: 2px solid #F50508;
+  border-radius: 36px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.tovar-content__title {
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 1.05%;
+  margin-bottom: 10px;
+}
+
+.tovar-content__description {
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 1.05%;
+}
+
+
+
+
+
+
