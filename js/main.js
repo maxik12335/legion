@@ -39,4 +39,68 @@ document.addEventListener("DOMContentLoaded", () => {
   //     catalogInMenuLists[i].classList.contains('catalog-in-menu-list--active') ? '' : catalogInMenuLists[i].classList.add('catalog-in-menu-list--active')
   //   })
   // })
+
+  // burger
+  const burgerMenu = document.querySelector('.burger-menu')
+  const burgerOpen = document.querySelector('.burger')
+  const burgerClose = document.querySelector('.burger-menu__close')
+
+  // burger open
+  burgerOpen.addEventListener('click', () => {
+    document.querySelector('body').style.overflow = 'hidden'
+    burgerMenu.classList.contains('burger-menu--active') ?
+    "" : burgerMenu.classList.add('burger-menu--active')
+  })
+
+  burgerClose.addEventListener('click', () => {
+    document.querySelector('body').style.overflow = ''
+    burgerMenu.classList.contains('burger-menu--active') ?
+    burgerMenu.classList.remove('burger-menu--active') : ""
+  })
+
+  // form
+  // Получаем элементы
+const form = document.querySelector('.call-modal__form')
+const modal = document.querySelector('.form-modal');
+const modalMessage = document.querySelector('.modal-message');
+
+// Обработчик отправки формы
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); // Отменяем стандартную отправку
+
+  // Собираем данные формы
+  const formData = new FormData(form);
+
+  // Отправляем на сервер через fetch
+  fetch('php/send.php', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.text()) // Получаем ответ как текст
+  .then(data => {
+    // Обрабатываем ответ от сервера
+    if (data.includes('Письмо отправлено!')) {
+      showModal('Сообщение успешно отправлено!', 'success');
+    } else {
+      showModal('Ошибка отправки. Попробуйте ещё раз.', 'error');
+    }
+  })
+  .catch(error => {
+    showModal('Произошла ошибка сети.', 'error');
+  });
+});
+
+// Функция для показа модального окна
+function showModal(message, type) {
+  modalMessage.textContent = message;
+  modal.style.display = 'flex';
+
+  // Можно добавить класс для стилизации (например, красный/зелёный текст)
+  if (type === 'success') {
+    modalMessage.style.color = 'green';
+  } else {
+    modalMessage.style.color = 'red';
+  }
+}
+
 });
