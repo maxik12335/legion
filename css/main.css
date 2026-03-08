@@ -67,6 +67,10 @@ body {
   cursor: pointer;
 }
 
+.menu-link:hover {
+  color: #C80C0F;
+}
+
 .header-tel {
   font-weight: 500;
   font-size: 15px;
@@ -486,6 +490,11 @@ body {
   text-decoration: none;
 }
 
+.tovar-button:hover {
+  background-color: #C80C0F;
+  color: white;
+}
+
 /* tovar */
 
 .tovar-section {
@@ -536,6 +545,16 @@ body {
   margin: 0 auto;
   display: block;
   margin-bottom: 40px;
+}
+
+.tovar-content__button {
+  background-color: white;
+  cursor: pointer;
+}
+
+.tovar-content__button:hover {
+  background-color: #C80C0F;
+  color: white;
 }
 
 .tovar-content__title {
