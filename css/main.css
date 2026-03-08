@@ -578,6 +578,14 @@ span.catalog-burger__small-span {
   width: 80%;
 }
 
+.tovar-content__mobyle {
+  display: none;
+}
+
+.catalog-menu-list-item__box:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 350px;
@@ -668,6 +676,19 @@ span.catalog-burger__small-span {
     display: none;
   }
 
+  .catalog-in-menu-list__link {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 85%;
+    justify-content: space-between;
+  }
+
+  .catalog-menu-list-item__box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
   .catalog-tovars-list__title {
     display: flex;
     align-items: center;
@@ -697,6 +718,14 @@ span.catalog-burger__small-span {
 
   .catalog-burger {
     display: flex;
+  }
+
+  .tovar-section__img {
+    width: 100%;
+    height: 310px;
+    padding: 5px;
+    margin: 0;
+    margin-bottom: 11px;
   }
 
   .catalog-tovars-list__mobyle {
@@ -854,6 +883,50 @@ span.catalog-burger__small-span {
     display: none;
   }
 
+  .tovar-content-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tovar-content {
+    display: none;
+  }
+
+  .tovar-content__mobyle {
+    display: block;
+  }
+
+  .tovar-content-mobyle__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .tovar-content__price {
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+
+  .tovar-content__button {
+    margin: 0;
+    font-size: 10px;
+    padding: 12px;
+  }
+
+  .tovar-section-title {
+    font-size: 15px;
+  }
+
+  .tovar-content__title {
+    font-size: 10px;
+    margin-bottom: 4px;
+  }
+
+  .tovar-content__description {
+    font-size: 10px;
+  }
+
   .company-mobyle {
     display: block;
     padding: 0 20px;
@@ -911,5 +984,6 @@ span.catalog-burger__small-span {
   .catalog-in-menu-list__item {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: flex-end;
   }
 }
