@@ -58,49 +58,64 @@ document.addEventListener("DOMContentLoaded", () => {
     burgerMenu.classList.remove('burger-menu--active') : ""
   })
 
-  // form
+  // modal call
+  const headerCallButton = document.querySelector('.header-call')
+  const modalCall = document.querySelector('.call-modal')
+  const modalCallFormButton = document.querySelector('.call-modal__button')
+
+  headerCallButton.addEventListener('click', () => {
+    modalCall.classList.contains('call-modal--active') ?
+    "" : modalCall.classList.add('call-modal--active')
+  })
+
+  modalCallFormButton.addEventListener('click', () => {
+    modalCall.classList.contains('call-modal--active') ?
+    modalCall.classList.remove('call-modal--active') : ""
+  })
+
   // Получаем элементы
-const form = document.querySelector('.call-modal__form')
-const modal = document.querySelector('.form-modal');
-const modalMessage = document.querySelector('.modal-message');
+// const form = document.querySelector('.call-modal__form')
+// const modal = document.querySelector('.form-modal');
+// const modalMessage = document.querySelector('.modal-message');
 
-// Обработчик отправки формы
-form.addEventListener('submit', function(event) {
-  event.preventDefault(); // Отменяем стандартную отправку
+// // Обработчик отправки формы
+// form.addEventListener('submit', function(event) {
+//   event.preventDefault(); // Отменяем стандартную отправку
 
-  // Собираем данные формы
-  const formData = new FormData(form);
+//   return;
+//   // Собираем данные формы
+//   const formData = new FormData(form);
 
-  // Отправляем на сервер через fetch
-  fetch('php/send.php', {
-    method: 'POST',
-    body: formData
-  })
-  .then(response => response.text()) // Получаем ответ как текст
-  .then(data => {
-    // Обрабатываем ответ от сервера
-    if (data.includes('Письмо отправлено!')) {
-      showModal('Сообщение успешно отправлено!', 'success');
-    } else {
-      showModal('Ошибка отправки. Попробуйте ещё раз.', 'error');
-    }
-  })
-  .catch(error => {
-    showModal('Произошла ошибка сети.', 'error');
-  });
-});
+//   // Отправляем на сервер через fetch
+//   fetch('php/send.php', {
+//     method: 'POST',
+//     body: formData
+//   })
+//   .then(response => response.text()) // Получаем ответ как текст
+//   .then(data => {
+//     // Обрабатываем ответ от сервера
+//     if (data.includes('Письмо отправлено!')) {
+//       showModal('Сообщение успешно отправлено!', 'success');
+//     } else {
+//       showModal('Ошибка отправки. Попробуйте ещё раз.', 'error');
+//     }
+//   })
+//   .catch(error => {
+//     showModal('Произошла ошибка сети.', 'error');
+//   });
+// });
 
-// Функция для показа модального окна
-function showModal(message, type) {
-  modalMessage.textContent = message;
-  modal.style.display = 'flex';
+// // Функция для показа модального окна
+// function showModal(message, type) {
+//   modalMessage.textContent = message;
+//   modal.style.display = 'flex';
 
-  // Можно добавить класс для стилизации (например, красный/зелёный текст)
-  if (type === 'success') {
-    modalMessage.style.color = 'green';
-  } else {
-    modalMessage.style.color = 'red';
-  }
-}
+//   // Можно добавить класс для стилизации (например, красный/зелёный текст)
+//   if (type === 'success') {
+//     modalMessage.style.color = 'green';
+//   } else {
+//     modalMessage.style.color = 'red';
+//   }
+// }
 
 });
