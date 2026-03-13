@@ -294,8 +294,8 @@ body {
   display: block;
   background-color: #C80C0F;
   border-radius: 50%;
-  width: 5px;
-  height: 5px;
+  min-width: 5px;
+  min-height: 5px;
 }
 
 .contacts-item-content__description {
