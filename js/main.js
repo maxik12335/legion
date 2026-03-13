@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // modal call
   const headerCallButton = document.querySelector('.header-call')
+  const tovarButton = document.querySelectorAll('.tovar-content__button')
   const modalCall = document.querySelector('.call-modal')
   const modalCallFormButton = document.querySelector('.call-modal__button')
 
@@ -68,9 +69,23 @@ document.addEventListener("DOMContentLoaded", () => {
     "" : modalCall.classList.add('call-modal--active')
   })
 
+  tovarButton.forEach(item => {
+    item.addEventListener('click', () => {
+      modalCall.classList.contains('call-modal--active') ? "" : modalCall.classList.add('call-modal--active')
+    })
+  })
+
   modalCallFormButton.addEventListener('click', () => {
     modalCall.classList.contains('call-modal--active') ?
     modalCall.classList.remove('call-modal--active') : ""
+  })
+
+  // close ".call-modal"
+  const modalCloseButton = document.querySelector('.call-modal__close')
+  modalCloseButton.addEventListener('click', () => {
+    modalCall.classList.contains('call-modal--active') ? 
+    modalCall.classList.remove('call-modal--active') :
+    "" 
   })
 
   // Получаем элементы
