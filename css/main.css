@@ -397,7 +397,7 @@ body {
 }
 
 .catalog-in-menu-list__item:not(:last-child) {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .catalog-in-menu-list {
@@ -406,6 +406,38 @@ body {
   list-style-type: none;
   padding: 0 0 0 18px;
   display: none;
+}
+
+.catalog-2in-menu-list {
+  display: none;
+  list-style-type: none;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+.catalog-in-link {
+  font-size: 15px;
+  font-weight: 300;
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.catalog-2in-link {
+  font-size: 15px;
+  font-weight: 300;
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.catalog-2in-menu-list__item:not(:last-child) {
+  margin-bottom: 15px;
+  display: block;
+}
+
+.catalog-2in-link:hover {
+  border-color: black;
 }
 
 .catalog-in-menu-list--active {
@@ -734,6 +766,38 @@ span.catalog-burger__small-span {
     width: 350px;
   }
 
+  .catalog-2in-menu-list {
+    padding-right: 30px;
+    padding-left: 20px;
+  }
+
+  .catalog-in-menu-list__img {
+    margin: 0;
+    margin-left: 10px;
+  }
+
+  .catalog-in-menu-list-item__box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .catalog-in-menu-list {
+    padding-right: 50px;
+  }
+
+  .catalog-2in-link {
+    display: block;
+    font-size: 15px
+  }
+
+  .catalog-2in-link:hover {
+    border-color: transparent;
+  }
+
   .contacts__title {
     font-size: 18px;
     margin-bottom: 30px;
@@ -826,10 +890,16 @@ span.catalog-burger__small-span {
     justify-content: space-between;
   }
 
+
   .catalog-menu-list-item__box {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+    font-size: 15px;
+    font-weight: 300;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
   }
 
   .catalog-tovars-list__title {
@@ -1126,8 +1196,8 @@ span.catalog-burger__small-span {
 
   .catalog-in-menu-list__item {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .burger-menu {
