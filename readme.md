@@ -6,7 +6,7 @@ legion_test_password_12345
 
 https://www.reg.ru/
 legion-luza@bk.ru
-250981Lvv
+lllegion_llluza_2026!%$@
 
 Кухонные плиты
 Встраиваемая техника

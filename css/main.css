@@ -56,40 +56,50 @@ body {
 }
 
 .menu-list__item:not(:last-child) {
-  margin-right: 45px;
+  margin-right: 22.5px;
+  padding-right: 22.5px;
+  border-right: 1px solid #C80C0F;
 }
 
 .menu-link {
   font-weight: 500;
   font-size: 15px;
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   cursor: pointer;
+  background-color: #C80C0F;
+  padding: 7px 20px;
+  border-radius: 5px;
+  /* border: 1px solid transparent; */
 }
 
 .menu-link:hover {
-  color: #C80C0F;
+  color: #000000;
+  background: transparent;
+  box-shadow: 0px 0px 8px 0px #0000004b;
 }
 
 .header-tel {
   font-weight: 500;
   font-size: 15px;
   margin-right: 60px;
+  text-decoration: none;
+  color: black;
 }
 
 .header-call {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 15px;
-  border-radius: 10px;
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  border: none;
   background-color: white;
-  border: 1px solid black;
+  box-shadow: 0px 0px 5px 0px #0000004f;
 }
 
 .header-call:hover {
-  color: #C80C0F;
-  border-color: #C80C0F;
+  color: white;
+  background-color: #C80C0F;
   cursor: pointer;
 }
 
@@ -190,10 +200,11 @@ body {
 }
 
 .company-map {
-  width: 500px;
-  height: 320px;
-  border-radius: 8px;
-  border: 3px solid #093233;
+  width: 100%;
+  min-height: -webkit-fill-available;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 8px 0px #0000003d;
 }
 
 .company__content {
@@ -214,17 +225,19 @@ body {
   font-size: 32px;
   margin-bottom: 50px;
   text-align: center;
+  display: none;
 }
 
 .contacts-title-block {
   background-color: #C80C0F;
   color: white;
   margin-bottom: 35px;
-  padding: 24px 105px;
+  padding: 15px 40px;
   border-radius: 5px;
-  font-weight: 700;
-  font-size: 24px;
+  font-weight: 600;
+  font-size: 20px;
   letter-spacing: 1.05%;
+  width: fit-content;
 }
 
 .contacts-box-content {
@@ -234,12 +247,12 @@ body {
 }
 
 .contacts-content {
-  padding: 25px;
-  border: 3px solid #093233;
+  padding: 45px;
+  box-shadow: 0px 0px 8px 0px #0000002e;
   list-style-type: none;
   margin-right: 20px;
-  border-radius: 8px;
-  width: 70%;
+  border-radius: 4px;
+  min-width: 50%;
 }
 
 .dostavka-box-content {
@@ -247,7 +260,7 @@ body {
 }
 
 .contacts-content--w30 {
-  width: 41%;
+  width: 100%;
 }
 
 .contacts-content__item {
@@ -266,18 +279,18 @@ body {
 }
 
 .contacts-item-content__title {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px;
   letter-spacing: 1.1%;
   color: #C80C0F;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .contacts-item-content__description {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 15px;
   letter-spacing: 1.1%;
-  width: 500px;
+  margin-bottom: 5px;
 }
 
 .dostavka-description {
@@ -312,11 +325,11 @@ body {
 }
 
 .dostavka-title {
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .dostavka-list {
-  height: 85%;
+  height: 65%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -345,13 +358,24 @@ body {
   border-radius: 5px;
   color: white;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .catalog-tovar-and-uslugy__title {
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.catalog-tovar-and-uslugy__title span {
+  display: block;
+  width: 75%;
+  height: 1px;
+  background-color: white;
+  box-shadow: 0px 0px 8px 7px #ffffff30;
 }
 
 .catalog-tovar-and-uslugy__subtitle {
@@ -362,6 +386,9 @@ body {
 .catalog-tovars-list {
   min-width: 23%;
   margin-right: 15px;
+  box-shadow: 0px 0px 8px 0px #0000002e;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 .catalog-tovars-list__title {
@@ -369,16 +396,20 @@ body {
   font-size: 15px;
   text-align: center;
   width: 100%;
-  border: 1px solid #000000;
-  padding: 10px;
-  border-radius: 36px;
+  /* border: 1px solid #000000; */
+  /* width: fit-content; */
+  margin: 0 auto;
   margin-bottom: 15px;
+  padding: 10px 20px;
+  background-color: #C80C0F;
+  color: white;
+  border-radius: 5px;
 }
 
 .catalog-menu-list {
   list-style-type: none;
   overflow-y: auto;
-  height: 500px;
+  height: fit-content;
   scrollbar-color: red transparent;
 }
 
@@ -468,7 +499,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+  box-shadow: 4px 4px 8px 0px #0000004d;
+  box-shadow: 4px 4px 8px 0px #0000002e;
+  padding: 20px 30px 20px 0px;
+  border-radius: 5px;
 }
 
 .tovar-item {
@@ -481,10 +516,10 @@ body {
 }
 
 .tovar-item__img {
-  width: 190px;
-  height: 190px;
-  min-width: 190px;
-  min-height: 190px;
+  width: 150px;
+  height: 150px;
+  min-width: 150px;
+  min-height: 150px;
   margin-right: 20px;
   object-fit: contain;
 }
@@ -508,25 +543,25 @@ body {
 }
 
 .tovar-price {
-  font-weight: 900;
+  font-weight: 400;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   letter-spacing: 1.05%;
 }
 
 .tovar-button {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 15px;
-  border: 2px solid #F50508;
-  border-radius: 36px;
-  padding: 10px 13px;
+  padding: 10px 20px;
   text-align: center;
-  color: black;
+  color: white;
+  background-color: #C80C0F;
   text-decoration: none;
+  border-radius: 5px;
 }
 
 .tovar-button:hover {
-  background-color: #C80C0F;
+  background-color: #950c0e;
   color: white;
 }
 
@@ -538,11 +573,12 @@ body {
 }
 
 .tovar-section-title {
-  font-weight: 800;
+  font-weight: 600;
   font-size: 24px;
   letter-spacing: 1.05%;
   color: #C80C0F;
   margin-bottom: 26px;
+  text-align: center;
 }
 
 .tovar-content-box {
@@ -570,13 +606,13 @@ body {
 }
 
 .tovar-content {
-  padding: 40px 20px;
-  border: 2px solid #E3B3B3;
+  padding: 40px 40px;
+  box-shadow: 0px 0px 8px 0px #0000002e;
   border-radius: 5px;
 }
 
 .tovar-content__price {
-  font-weight: 900;
+  font-weight: 400;
   font-size: 25px;
   letter-spacing: 1.05%;
   margin-bottom: 21px;
@@ -584,37 +620,44 @@ body {
 }
 
 .tovar-content__button {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 20px;
-  padding: 6px 13px;
-  border: 2px solid #F50508;
-  border-radius: 36px;
+  padding: 10px 20px;
+  border-radius: 5px;
   margin: 0 auto;
   display: block;
   margin-bottom: 40px;
-}
-
-.tovar-content__button {
-  background-color: white;
-  cursor: pointer;
-}
-
-.tovar-content__button:hover {
+  border: none;
   background-color: #C80C0F;
+  cursor: pointer;
   color: white;
 }
 
+.tovar-content__button:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0px 0px 8px 0px #0000004b;
+}
+
 .tovar-content__title {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 25px;
   letter-spacing: 1.05%;
   margin-bottom: 10px;
+  display: none;
 }
 
 .tovar-content__description {
   font-weight: 300;
   font-size: 15px;
   letter-spacing: 1.05%;
+}
+
+p.tovar-content__description:not(:last-child) {
+  font-weight: 500;
+  font-size: 17px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 /* mobyle blocks display:none */
@@ -624,7 +667,7 @@ body {
 
 .burger {
   flex-direction: column;
-  width: 15px;
+  /* width: 15px; */
   display: none;
 }
 
@@ -641,7 +684,7 @@ body {
 .catalog-burger {
   display: none;
   flex-direction: column;
-  width: 15px;
+  /* width: 15px; */
   margin-right: 20px;
 }
 
@@ -695,7 +738,7 @@ span.catalog-burger__small-span {
 .call-modal__title {
   text-align: center;
   color: #C80C0F;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 500;
   margin-bottom: 15px;
 }
@@ -790,6 +833,7 @@ span.catalog-burger__small-span {
   margin: 0 auto;
   font-size: 18px;
   text-align: center;
+  font-weight: 300;
   color: black;
   text-decoration: none;
   border-bottom: 1px solid transparent;
@@ -852,8 +896,8 @@ span.catalog-burger__small-span {
   }
 
   .contacts-img {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     margin-right: 20px;
   }
 
@@ -862,7 +906,12 @@ span.catalog-burger__small-span {
   }
 
   .contacts-content {
-    padding: 0 15px;
+    padding: 20px 20px;
+    margin-right: 0;
+  }
+
+  .contacts-content--w30 {
+    margin-top: 10px;
   }
 
   .contacts-content__item:last-child {
@@ -882,7 +931,7 @@ span.catalog-burger__small-span {
   }
 
   .red-round {
-    display: none;
+    /* display: none; */
   }
 
   .dostavka-title {
@@ -890,15 +939,21 @@ span.catalog-burger__small-span {
   }
 
   .contacts-item-content__title {
-    font-size: 10px;
+    font-size: 17px;
+    margin-bottom: 10px;
   }
 
   .contacts-item-content__description {
-    font-size: 10px;
+    font-size: 13px;
+  }
+
+  .contacts-box-content .company-map {
+    min-height: 250px;
+    margin-top: 10px;
   }
 
   .company-map {
-    display: none;
+    width: 55%;
   }
 
   .contacts-content {
@@ -911,6 +966,7 @@ span.catalog-burger__small-span {
 
   .contacts-box-content {
     margin-bottom: 30px;
+    flex-direction: column;
   }
 
   .dostavka-box-content {
@@ -941,21 +997,29 @@ span.catalog-burger__small-span {
   }
 
   .catalog-tovars-list__title {
-    display: flex;
+    /* display: none; */
     align-items: center;
     font-size: 13px;
     margin-bottom: 30px;
     background-color: #C80C0F;
-    padding: 5px 10px;
+    padding: 7px 20px;
     color: white;
     border-radius: 5px;
     border: none;
   }
 
+  .burger-menu--active .catalog-tovars-list__title {
+    display: none;
+  }
+
+  .catalog-tovars-list__title .catalog-burger {
+    display: none;
+  }
+
   .catalog-tovars-list {
     width: 100%;
     margin: 0;
-    padding: 5px;
+    padding: 30px 20px;
   }
 
   .catalog-menu-list__item {
@@ -969,6 +1033,10 @@ span.catalog-burger__small-span {
 
   .catalog-burger {
     display: flex;
+  }
+
+  .catalog-tovar-and-uslugy__title span {
+    width: 45%;
   }
 
   .tovar-section-box_img {
@@ -1001,10 +1069,6 @@ span.catalog-burger__small-span {
     font-size: 15px;
   }
 
-  .tovar-item__img {
-    margin-bottom: 5px;
-  }
-
   .tovar-item {
     display: none;
   }
@@ -1021,7 +1085,7 @@ span.catalog-burger__small-span {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
   }
 
   .tovar-price-box__mobyle {
@@ -1035,12 +1099,13 @@ span.catalog-burger__small-span {
   }
 
   .catalog-tovar-and-uslugy-list__item {
-    margin-bottom: 15px;
+    padding: 20px 30px;
   }
 
   .tovar-item__title {
-    font-size: 15px;
-    margin-bottom: 5px;
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-weight: 500;
   }
 
   .tovar-price {
@@ -1053,7 +1118,13 @@ span.catalog-burger__small-span {
   }
 
   .tovar-item__description {
-    font-size: 10px;
+    font-size: 12px;
+  }
+
+  .tovar-item__description:not(:last-child) {
+    font-weight: 500;
+    margin-bottom: 2.5px;
+    padding-bottom: 2.5px;
   }
 
   .tovar-item {
@@ -1072,7 +1143,11 @@ span.catalog-burger__small-span {
 
   .burger {
     display: flex;
-    margin-right: 15px;
+    margin-right: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 7px 25px;
+    box-shadow: 0px 0px 5px 0px #0000004f;
   }
 
   .logo-img {
@@ -1091,6 +1166,7 @@ span.catalog-burger__small-span {
   .header-call {
     font-size: 8px;
     padding: 5px 10px;
+    display: none;
   }
 
   .menu {
@@ -1200,11 +1276,6 @@ span.catalog-burger__small-span {
     margin-bottom: 35px;
   }
 
-  .company-map {
-    width: 140px;
-    height: 100px;
-  }
-
   .bit-technika {
     margin-bottom: 30px;
   }
@@ -1300,19 +1371,34 @@ span.catalog-burger__small-span {
 
   .burger-menu-list__link {
     font-size: 13px;
+    background: white;
     color: black;
+    background: #C80C0F;
+    color: #ffffff;
+    padding: 8px 18px;
     text-decoration: none;
     cursor: pointer;
+    display: block;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 0px #0000004f;
+  }
+
+
+
+  .burger-menu-list__item {
+    margin-bottom: 0;  
   }
 
   .burger-menu-links-img {
     width: 50px;
     height: 50px;
+    display: none;
   }
 
   .burger-menu__img {
-    width: 150px;
-    height: 125px;
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
     border-radius: 5px;
     margin-bottom: 25px;
   }
@@ -1321,14 +1407,18 @@ span.catalog-burger__small-span {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 40px;
-    border: 1px solid #093233;
+    padding: 10px;
+    /* box-shadow: 0px 0px 5px 0px #0000002b; */
     border-radius: 5px;
     margin-bottom: 30px;
   }
 
   .burger-menu-list {
     list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .burger-menu-item img {

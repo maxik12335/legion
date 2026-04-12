@@ -91,4 +91,19 @@ document.addEventListener("DOMContentLoaded", () => {
     "" 
   })
 
+  // описание товаров
+    const descriptions = document.querySelectorAll('.tovar-item__description')
+    descriptions.forEach((item, i) => {
+        const descriptionsText = item.textContent || item.innerText
+        let truncatedText = '';
+        if (descriptionsText.length > 120) {
+          truncatedText = descriptionsText.substring(0, 120) + '...';
+          console.log(truncatedText)
+        } else {
+          truncatedText = descriptionsText;
+        }
+
+        item.textContent = truncatedText
+    })
+   
 });
