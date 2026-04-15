@@ -1435,6 +1435,8 @@ img.slider-img-shale {
 
   .tovar-content__mobyle {
     display: block;
+    box-shadow: 0px 0px 8px 0px #0000002e;
+    padding: 20px;
   }
 
   .tovar-content-mobyle__top {
