@@ -105,5 +105,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
         item.textContent = truncatedText
     })
-   
+
 });

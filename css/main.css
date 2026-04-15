@@ -4,6 +4,42 @@
   box-sizing: border-box;
 }
 
+/* slider */
+.swiper-container {
+  width: inherit;
+  height: 390px;
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 10px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* slider */
+
 body {
   font-family: Inter;
 }
@@ -201,6 +237,7 @@ body {
 
 .company-map {
   width: 100%;
+  height: 300px;
   min-height: -webkit-fill-available;
   border-radius: 5px;
   border: none;
@@ -212,7 +249,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 52%;
+  width: 100%;
   margin: 0;
 }
 
@@ -843,9 +880,167 @@ span.catalog-burger__small-span {
   border-color: black;
 }
 
+.slide-main {
+  width: 100%;
+  height: 100%;
+  background-color: #C80C0F;
+  color: white;
+  padding: 50px 100px;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.swiper-slide {
+  background-color: #C80C0F;
+}
+
+.slide-main-title {
+  font-size: 50px;
+  width: 75%;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.slide-box:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.slide-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.slide-subtitle {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+img.slider-img {
+  position: relative;
+  right: -1%;
+  width: 550px;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px 0px #ffffff94;
+}
+
+.slider-slide-box {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider-section {
+  margin-bottom: 50px;
+}
+
+.slider-text {
+  width: 70%;
+  font-size: 45px;
+  text-align: center;
+  color: white;
+  border-right: 1px solid;
+  width: fit-content;
+  margin: 0 auto;
+  padding-right: 50px;
+}
+
+.slider-slide-box-shale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img.slider-img-shale {
+  width: 750px;
+  border-radius: 10px;
+  height: fit-content;
+  box-shadow: 0px 0px 8px 0px #ffffff94;
+}
+
+.swiper-navigation-icon {
+  color: white;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  border-radius: 50%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.473);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.548);
+  background-color: rgba(255, 255, 255, 0.226);
+}
+
+.catalog-in-main__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.catalog-in-main__list-item {
+  width: 15%;
+  padding: 30px 10px 15px 10px;
+  border-radius: 5px;
+}
+
+.catalog-in-main__list-item:hover {
+  box-shadow: 0px 0px 8px 0px #00000024;
+}
+
+.catalog-in-main__list-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.catalog-in-main-list__img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.catalog-in-main-list__title {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 300;
+  color: black;
+  margin-top: 15px;
+}
+
+.catalog-in-main {
+  margin-bottom: 50px;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 350px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .catalog-in-main__list {
+    flex-wrap: wrap;
+  }
+
+  .catalog-in-main__list-item {
+    width: 50%;
+    margin-bottom: 10px;
   }
 
   .catalog-2in-menu-list {
@@ -947,13 +1142,16 @@ span.catalog-burger__small-span {
     font-size: 13px;
   }
 
-  .contacts-box-content .company-map {
-    min-height: 250px;
-    margin-top: 10px;
+  .company-map {
+    width: 100%;
+    margin: 0 auto;
+    height: 250px;
   }
 
-  .company-map {
-    width: 55%;
+  .contacts-box-content .company-map {
+    width: 100%;
+    min-height: 250px;
+    margin-top: 10px;
   }
 
   .contacts-content {
@@ -1236,19 +1434,20 @@ span.catalog-burger__small-span {
   .tovar-content-mobyle__top {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 10px;
   }
 
   .tovar-content__price {
     margin-bottom: 0;
     font-size: 15px;
+    margin-right: 20px;
   }
 
   .tovar-content__button {
     margin: 0;
-    font-size: 10px;
-    padding: 12px;
+    font-size: 13px;
+    padding: 10px 20px;
   }
 
   .tovar-section-title {
@@ -1272,7 +1471,7 @@ span.catalog-burger__small-span {
   .company__content {
     display: flex;
     width: 100%;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 35px;
   }
 
@@ -1281,22 +1480,77 @@ span.catalog-burger__small-span {
   }
 
   .company-title {
-    font-size: 10px;
-    margin-right: 15px;
-    width: 46%;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 13px;
   }
 
   .company-description {
-    font-size: 8px;
+    font-size: 10px;
     display: flex;
     align-items: center;
     line-height: 13px;
   }
 
+  .swiper-container {
+    height: 250px;
+  }
+
+  .slide-main {
+    padding: 10px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .slide-main-title {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .slider-slide-box {
+    flex-direction: column-reverse;
+  }
+
+  img.slider-img {
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .slider-text {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    padding: 10px 10px 15px 10px;
+    border-top: 1px solid;
+    margin-top: 20px;
+    padding-top: 10px;
+  }
+
+  img.slider-img-shale {
+    width: 90%;
+  }
+
+  img.slider-img {
+    border-radius: 0;
+  }
+
+  .slide-title {
+    font-size: 11px;
+  }
+
+  .slide-subtitle {
+    font-size: 9px;
+  }
+
   .company-description__img {
     display: block;
-    width: 47px;
-    height: 47px;
+    width: 60px;
+    height: 60px;
     margin-right: 35px;
   }
 
@@ -1324,7 +1578,7 @@ span.catalog-burger__small-span {
     padding: 10px;
     background-color: white;
     position: fixed;
-    z-index: 2;
+    z-index: 40;
     overflow-y: scroll;
     height: 105vh;
   }

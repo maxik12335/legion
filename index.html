@@ -7,9 +7,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
+  <!-- slider -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- slider -->
   <title>Легион</title>
 </head>
 <body>
+ 
+
   <div class="form-modal">
     <p class="modal-message"></p>
   </div>
@@ -126,71 +132,116 @@
   </header>
 
   <main class="main">
-    <!-- bit-technika -->
-    <section class="bit-technika">
+    <section class="slider-section">
       <div class="container">
-        <h1 class="bit-technika__title">
-          БЫТОВАЯ ТЕХНИКА «Легион» <br> в городе Луза
-        </h1>
+        <!-- Swiper -->
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide-main">
+                <h2 class="slide-main-title">
+                  БЫТОВАЯ ТЕХНИКА «Легион» в городе Луза
+                </h2>
 
-        <div class="bit-technika__box">
-          <div class="bit-technika__content">
-            <div class="bit-technika__contacts-box">
-              <div class="bit-technika__contact">
-                <div class="bit-technika__contact-title">
-                  Адрес: Кировская область, город Луза, улица Железнодорожников, дом 2 б.
-                </div>
-                <div class="bit-technika__contact-subtitle">
-                  Телефон: 8 (83346) 5-21-34
-                </div>
-              </div>
-
-              <div class="bit-technika__contact">
-                <div class="bit-technika__contact-title">
-                  Условия заказа:
-                </div>
-                <div class="bit-technika__contact-subtitle">
-                  Доставка 7-10 дней
-                </div>
-                <div class="bit-technika__contact-subtitle">
-                  Предоплата 50 % от стоимости, остаток по факту приезда товара
-                </div>
-              </div>
-            </div>
-
-            <img class="bit-technika__content-img" src="img/bit-technika__content-img.svg" alt="img">
-          </div>
-          <img class="bit-technika__img" src="img/bit-technika__img.jpg" alt="img">
-        </div>
-
-          <div class="bit-technika__box-mobyle">
-            <div class="bit-technika__content">
-              <div class="bit-technika__contacts-box">
-                <div class="bit-technika__contact">
-                  <div class="bit-technika__contact-title">
+                <div class="slide-box">
+                  <p class="slide-title">
                     Адрес: Кировская область, город Луза, улица Железнодорожников, дом 2 б.
-                  </div>
-                  <div class="bit-technika__contact-subtitle">
+                  </p>
+                  <p class="slide-subtitle">
                     Телефон: 8 (83346) 5-21-34
-                  </div>
+                  </p>
                 </div>
 
-                <div class="bit-technika__contact">
-                  <div class="bit-technika__contact-title">
+                <div class="slide-box">
+                  <p class="slide-title">
                     Условия заказа:
-                  </div>
-                  <div class="bit-technika__contact-subtitle">
+                  </p>
+                  <p class="slide-subtitle">
                     Доставка 7-10 дней
-                  </div>
-                  <div class="bit-technika__contact-subtitle">
+                  </p>
+                  <p class="slide-subtitle">
                     Предоплата 50 % от стоимости, остаток по факту приезда товара
-                  </div>
+                  </p>
                 </div>
               </div>
-
-              <img class="bit-technika__content-img" src="img/bit-technika__img.jpg" alt="img">
+            </div>
+            <div class="swiper-slide">
+              <div class="slider-slide-box">
+                <p class="slider-text">Стиральные машины</p>
+                <img class="slider-img" src="img/slider-1.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider-slide-box">
+                <p class="slider-text">Кухонные плиты</p>
+                <img class="slider-img" src="img/slider-2.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider-slide-box">
+                <p class="slider-text">Холодильники</p>
+                <img class="slider-img" src="img/slider-3.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider-slide-box">
+                <p class="slider-text">Морозильные камеры</p>
+                <img class="slider-img" src="img/slider-4.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider-slide-box slider-slide-box-shale">
+                <img class="slider-img-shale" src="img/slider-5.jpg" alt="">
+              </div>
             </div>
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- каталог -->
+    <section class="catalog-in-main">
+      <div class="container">
+        <ul class="catalog-in-main__list">
+          <li class="catalog-in-main__list-item">
+            <a class="catalog-in-main__list-link" href="pages/catalog-pages/gazovye-plitsy-shirinoj-do-50-sm.html">
+              <img class="catalog-in-main-list__img" src="img/cuh-plits.jpg" alt="">
+              <p class="catalog-in-main-list__title">Кухонные плиты</p>
+            </a>
+          </li>
+          <li class="catalog-in-main__list-item">
+            <a class="catalog-in-main__list-link" href="pages/catalog-pages/gazovye-vodonagrevateli.html">
+              <img class="catalog-in-main-list__img" src="img/vodonagrevately.jpg" alt="">
+              <p class="catalog-in-main-list__title">Водонагреватели</p>
+            </a>
+          </li>
+          <li class="catalog-in-main__list-item">
+            <a class="catalog-in-main__list-link" href="pages/catalog-pages/vozduhoochistiteli-vytyazhki.html">
+              <img class="catalog-in-main-list__img" src="img/vitygki.jpg" alt="">
+              <p class="catalog-in-main-list__title">Вытяжки</p>
+            </a>
+          </li>
+          <li class="catalog-in-main__list-item">
+            <a class="catalog-in-main__list-link" href="pages/catalog-pages/morozilnaya-kamera-snizu.html">
+              <img class="catalog-in-main-list__img" src="img/holodolniky.jpg" alt="">
+              <p class="catalog-in-main-list__title">Холодильники</p>
+            </a>
+          </li>
+          <li class="catalog-in-main__list-item">
+            <a class="catalog-in-main__list-link" href="pages/catalog-pages/stiralnye-mashiny-s-vertikalnoj-zagruzkoj.html">
+              <img class="catalog-in-main-list__img" src="img/stir-mahiny.jpg" alt="">
+              <p class="catalog-in-main-list__title">Стиральные машины</p>
+            </a>
+          </li>
+          <li class="catalog-in-main__list-item">
+            <a class="catalog-in-main__list-link" href="pages/catalog-pages/posudomoechnye-mashiny.html">
+              <img class="catalog-in-main-list__img" src="img/posudomoechni-mashiny.jpg" alt="">
+              <p class="catalog-in-main-list__title">Посудомоечные машины</p>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -226,6 +277,33 @@
     </section>
   </main>
 
+  <!-- slider -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- slider -->
   <script src="js/main.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      // Optional parameters
+      // direction: 'gorizontal',
+      // loop: true,
+
+      // // If we need pagination
+      // pagination: {
+      //   el: '.swiper-pagination',
+      // },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      // scrollbar: {
+      //   el: '.swiper-scrollbar',
+      // },
+    });
+  </script>
 </body>
 </html>
