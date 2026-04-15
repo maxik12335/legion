@@ -546,7 +546,7 @@ body {
 
 .catalog-tovar-and-uslugy-list__item:hover {
   box-shadow: 4px 4px 18px 2px #00000029;
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .tovar-item {
