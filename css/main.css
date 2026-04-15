@@ -541,6 +541,12 @@ body {
   box-shadow: 4px 4px 8px 0px #0000002e;
   padding: 20px 30px 20px 0px;
   border-radius: 5px;
+  transition: 0.2s;
+}
+
+.catalog-tovar-and-uslugy-list__item:hover {
+  box-shadow: 4px 4px 18px 2px #00000029;
+  transform: scale(1.02);
 }
 
 .tovar-item {
