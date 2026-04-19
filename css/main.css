@@ -540,7 +540,7 @@ body {
   margin-bottom: 35px;
   box-shadow: 4px 4px 8px 0px #0000004d;
   box-shadow: 4px 4px 8px 0px #0000002e;
-  padding: 20px 30px 20px 0px;
+  padding: 20px 30px 20px 20px;
   border-radius: 5px;
   transition: 0.2s;
 }
@@ -778,6 +778,7 @@ span.catalog-burger__small-span {
   background-color: white;
   width: 450px;
   position: relative;
+  border-radius: 5px;
 }
 
 .call-modal__title {
