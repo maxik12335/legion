@@ -785,6 +785,13 @@ span.catalog-burger__small-span {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 15px;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  color: white;
+  background: #C80C0F;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .call-modal__form {
